@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+    
+    tools {
+        // Définir l'outil Maven (assurez-vous que 'M2_HOME' est configuré dans Jenkins)
+        maven 'M2_HOME'
+    }
+
+    stages {
+        stage('GIT') {
+            steps {
+                // Correct syntaxe pour la commande git
+                git branch: 'master', 
+                    url: 'https://github.com/yesminezaghdene03/Activit-2-PipeLine.git'
+            }
+        }
+    }
+}
