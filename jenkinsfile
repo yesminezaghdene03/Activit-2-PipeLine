@@ -10,7 +10,7 @@ pipeline {
         stage('GIT') {
             steps {
                 // Correct syntaxe pour la commande git
-                git branch: 'master', 
+                git branch: 'main', 
                     url: 'https://github.com/yesminezaghdene03/Activit-2-PipeLine.git'
             }
         }
